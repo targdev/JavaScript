@@ -1,0 +1,117 @@
+body {
+  background: rgb(255, 255, 255);
+}
+a {
+  text-decoration: none;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+.divider-1 {
+  height: 1px;
+  background: linear-gradient(270deg, white, rgb(150, 150, 150));
+}
+
+.divider-2 {
+  height: 1px;
+  background: linear-gradient(270deg, rgb(150, 150, 150), white);
+}
+
+/* layout */
+.container {
+  padding-left: 2.5rem;
+  padding-right: 2.5rem;
+  text-align: center;
+
+  display: block;
+}
+
+h1 {
+  font: normal 18pt sans-serif;
+  color: red;
+  font-size: 62px;
+}
+
+h2 {
+  margin-top: 2rem;
+  font: normal 18pt 'Courier New', Courier, monospace;
+  color: red;
+  font-size: 48px;
+}
+p {
+  color: rgb(0, 0, 0);
+  font-size: 12pt;
+  font: normal 18pt sans-serif;
+}
+
+/* header */
+#header,
+#calculator,
+#year {
+  background: rgb(240, 240, 240);
+  margin-top: 0;
+  padding-top: 2rem;
+  padding-bottom: 3rem;
+}
+
+#header .logo {
+  font-family: 'Courier New', Courier, monospace;
+  margin-bottom: 1rem;
+}
+
+/* MouseEvent */
+.button {
+  color: rgb(0, 0, 0);
+}
+
+.button {
+  background: red;
+
+  border-radius: 30%;
+  font-family: sans-serif;
+  font-size: 16pt;
+
+  width: 10rem;
+  height: 10rem;
+  text-align: center;
+  line-height: 10rem;
+  margin-top: 3rem;
+  margin-bottom: 3rem;
+  margin-left: auto;
+  margin-right: auto;
+
+  transition: 0.5s;
+}
+
+/* input */
+input {
+  margin-top: 2rem;
+  margin-bottom: 3rem;
+  margin-right: auto;
+  margin-left: auto;
+
+  width: 100px;
+}
+
+/* Somando Valores */
+.soma {
+  color: rgb(0, 0, 0);
+}
+
+#res .result {
+  color: red;
+}
+
+/* Localização */
+#localization .localizacao {
+  font-family: sans-serif;
+  width: auto;
+}
+
+#local {
+  margin-bottom: 2rem;
+}
+
+/* Idade para Votar */

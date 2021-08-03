@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="pt_BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Javacript | Test</title>
+
+    <link rel="stylesheet" href="css/reset.css" />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <main>
+      <header class="container grid" id="header">
+        <div>
+          <h1 class="logo">Olá, mundo do <br /><strong>Javacript</strong></h1>
+          <p>
+            Esse projeto serve apenas para colocar em pratica meus conhecimentos
+            em <br />
+            <strong>JavaScript</strong>.
+          </p>
+        </div>
+      </header>
+
+      <div class="divider-2"></div>
+
+      <section class="container grid" id="mouseevent">
+        <h2>MouseEvent</h2>
+        <p>
+          Foram usados <strong>'click, mouseenter e mouseout'</strong> para a
+          reazlização disso.
+        </p>
+
+        <div class="button">Clique aqui!</div>
+      </section>
+
+      <div class="divider-1"></div>
+
+      <section class="container grid" id="calculator">
+        <h2>Somando Valores</h2>
+        <p>Calculadora de soma</p>
+        <input type="number" name="boxn1" id="boxn1" /> <span>+</span>
+        <input type="number" name="boxn2" id="boxn2" />
+        <input type="button" value="Somar" onclick="somar()" />
+
+        <div id="res">
+          <p class="result">Resultado</p>
+        </div>
+      </section>
+
+      <div class="divider-2"></div>
+
+      <section class="container grid" id="localization">
+        <h2>Localização</h2>
+        <p>
+          <strong>Condição</strong> <br />
+          if/else
+        </p>
+        <div class="localizacao">
+          Coloque o nome do seu país:
+          <input type="text" id="pais" />
+          <input type="button" value="Buscar" onclick="buscar()" />
+          <p id="local"></p>
+        </div>
+      </section>
+
+      <div class="divider-1"></div>
+
+      <section class="container" id="year">
+        <h2>Idade para votar</h2>
+        <p>
+          <strong>Condição</strong> <br />
+          Aninhamento de Condições
+        </p>
+        <div class="vote">
+          <input type="number" />
+          <input type="button" value="Verificar" onclick="verificar()" />
+        </div>
+      </section>
+    </main>
+
+    <script src="main.js"></script>
+  </body>
+</html>
