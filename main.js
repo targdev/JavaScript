@@ -47,3 +47,19 @@ function buscar() {
     local.innerHTML += `<p>Você é estrangeiro(a).</p>`
   }
 }
+
+/* Idade para votar */
+
+function verificar() {
+  var idade = document.querySelector('input#idade')
+  var votacao = document.querySelector('#resvote')
+  var resvote = Number(idade.value)
+
+  if (resvote < 16) {
+    votacao.innerHTML = `Não pode votar, você tem apenas ${resvote} anos`
+  } else if (resvote < 18 || resvote > 65) {
+    votacao.innerHTML = `Voto opcional, você tem ${resvote} anos`
+  } else {
+    votacao.innerHTML = `Voto é obrigatório, você tem ${resvote} anos!`
+  }
+}
