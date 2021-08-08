@@ -105,7 +105,10 @@ input {
 }
 
 /* Localização */
-#localization .localizacao {
+#localization .localizacao,
+#year .vote,
+#bread .pao,
+#day .dia {
   font-family: sans-serif;
   width: auto;
 }
@@ -114,4 +117,24 @@ input {
   margin-bottom: 2rem;
 }
 
-/* Idade para Votar */
+/* Dia da semana */
+
+#day .dia {
+  margin-top: 1rem;
+  margin-bottom: 2rem;
+}
+
+/* login */
+
+#user input {
+  margin-bottom: 0;
+  margin-top: 0;
+}
+
+#user input#login {
+  margin-top: 2rem;
+}
+
+#user input#password {
+  margin-bottom: 1rem;
+}
