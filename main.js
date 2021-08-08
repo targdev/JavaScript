@@ -42,7 +42,7 @@ function buscar() {
   local.innerHTML = `Você é do(a) ${result}`
 
   if (result == 'Brasil' || result == 'brasil') {
-    local.innerHTML += `<p>Kuakuakuakuakuakua br br br </p>`
+    local.innerHTML += `<p>Você é brasileiro </p>`
   } else {
     local.innerHTML += `<p>Você é estrangeiro(a).</p>`
   }
@@ -63,3 +63,38 @@ function verificar() {
     votacao.innerHTML = `Voto é obrigatório, você tem ${resvote} anos!`
   }
 }
+
+/* dia da semana */
+
+var day = new Date()
+var semana = day.getDay()
+var diaSem = day.getDate()
+var hoje = document.querySelector('#day .dia')
+
+switch (semana) {
+  case 0:
+    hoje.innerHTML = `Hoje é <strong>domingo</strong>, dia ${diaSem}`
+    break
+  case 1:
+    hoje.innerHTML = `Hoje é <strong>segunda</strong>, dia ${diaSem}`
+    break
+  case 2:
+    hoje.innerHTML = `Hoje é <strong>terça</strong>, dia ${diaSem}`
+    break
+  case 3:
+    hoje.innerHTML = `Hoje é <strong>quarta</strong>, dia ${diaSem}`
+    break
+  case 4:
+    hoje.innerHTML = `Hoje é <strong>quinta</strong>, dia ${diaSem}`
+    break
+  case 5:
+    hoje.innerHTML = `Hoje é <strong>sexta</strong>, dia ${diaSem}`
+    break
+  case 6:
+    hoje.innerHTML = `Hoje é <strong>sábado</strong>, dia ${diaSem}`
+    break
+  default:
+    hoje.innerHTML = `[ERRO] Dia Inválido`
+}
+
+// user
